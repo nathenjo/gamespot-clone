@@ -5,6 +5,7 @@ import Home from './pages/home';
 import News from './pages/news';
 import TrendingTopics from './helpers/trendingTopics';
 import NavBar from './helpers/navbar';
+import Footer from './helpers/footer';
 
 export default function App() {
     return (
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/news" component={News} />
           </Switch>
         </Router>
+        <Footer />
       </div>
     );
 }

@@ -1,0 +1,128 @@
+.footer {
+    height: 420px;
+    grid-row: footer-s/footer-e;
+    grid-column: 1/-1;
+    background-color: darkslategray;
+    display: grid;
+    grid-template-columns: 220px [s] 1fr [e] 220px;
+    grid-template-rows: [header-s] auto [header-e body-s] auto [body-e];
+    &__header {
+        grid-row: header-s/header-e;
+        grid-column: s/e;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30px [s] 20px [e];
+        .copyright {
+            grid-row: s/e;
+            font-size: 20px;
+            font-weight: 800;
+            color: gray;
+            .far {
+                padding-right: 5px;
+            }
+        }
+        .links {
+            grid-row: s/e;
+            font-size: 20px;
+            color: white;
+            font-weight: 500;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0px 20px;
+            & > * {
+                &:hover {
+                    color: gray;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &__body {
+        grid-row: body-s/body-e;
+        grid-column: s/e;
+        display: grid;
+        grid-template-columns: [sites-s] 1fr [sites-e reviews-s] 1fr [reviews-e news-s] 1fr [news-e shows-s] 1fr [shows-e socials-s] 1fr [socials-e];
+        grid-template-rows: [s] 200px [e];
+        &__more-sites, &__reviews, &__news, &__shows {
+            color: white;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            & > * {
+                width: 150px;
+                &:hover {
+                    color: gray;
+                    cursor: pointer;
+                }
+            }
+        }
+        &__title {
+            font-size: 18px;
+            color: gray;
+            &:hover {
+                cursor: auto;
+            }
+        }
+        &__subtitle {
+            font-size: 18px;
+            color: gray;
+            font-weight: 600;
+            padding: 5px 0px;
+            border-top: 1px solid white;
+        }
+
+        &__more-sites {
+            grid-column: sites-s/sites-e;
+            .sites__link {
+                display: flex;
+                gap: 5px;
+            }
+        }
+        &__reviews {
+            grid-column: reviews-s/reviews-e;
+
+        }
+        &__news {
+            grid-column: news-s/news-e;
+
+        }
+        &__shows {
+            grid-column: shows-s/shows-e;
+
+        }
+        &__forums {
+            padding-bottom: 10px;
+            font-size: 18px;
+            &:hover {
+                cursor: pointer;
+                color: gray;
+            }
+        }
+        &__socials {
+            grid-column: socials-s/socials-e;
+            color: white;
+            font-size: 16px;
+            &__icon-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                width: 100px;
+                padding-bottom: 10px;
+                // justify-content: space-evenly;
+                & > * {
+                    font-size: 2rem;
+                    &:hover {
+                        color: gray;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    &__img {
+        margin-top: 20px;
+        width: 150px;
+        grid-column: news-s/news-e;
+    }
+}

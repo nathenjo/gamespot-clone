@@ -20,7 +20,7 @@ export default function Reviews(props) {
 
                     <li style={{gridRow: 'row-start 3'}} className='reviews__list__list'>Halo Infinite</li>
                     <div style={{gridRow: 'row-start 3'}} className='reviews__list__label'>Reviewed on XBSX</div>
-                    <RatingCircle position={3} className="reviews__list__rating" number={8} label="Great" />
+                    <RatingCircle position={3} className="reviews__list__rating" number={9} label="Superb" />
 
                     <li style={{gridRow: 'row-start 4'}} className='reviews__list__list'>Solar Ash</li>
                     <div style={{gridRow: 'row-start 4'}} className='reviews__list__label'>Reviewed on PC, PS5</div>
@@ -28,23 +28,23 @@ export default function Reviews(props) {
 
                     <li style={{gridRow: 'row-start 5'}} className='reviews__list__list'>Big Brain Academy: Brain vs. Brain</li>
                     <div style={{gridRow: 'row-start 5'}} className='reviews__list__label'>Reviewed on NS</div>
-                    <RatingCircle position={5} className="reviews__list__rating" number={8} label="Great" />
+                    <RatingCircle position={5} className="reviews__list__rating" number={7} label="Good" />
 
                     <li style={{gridRow: 'row-start 6'}} className='reviews__list__list'>Halo Infinite</li>
                     <div style={{gridRow: 'row-start 6'}} className='reviews__list__label'>Reviewed on XBSX</div>
-                    <RatingCircle position={6} className="reviews__list__rating" number={8} label="Great" />
+                    <RatingCircle position={6} className="reviews__list__rating" number={8} label="In Progress" />
 
                     <li style={{gridRow: 'row-start 7'}} className='reviews__list__list'>Sherlock Holmes: Chapter One</li>
                     <div style={{gridRow: 'row-start 7'}} className='reviews__list__label'>Reviewed on PS5, XBSX</div>
-                    <RatingCircle position={7} className="reviews__list__rating" number={8} label="Great" />
+                    <RatingCircle position={7} className="reviews__list__rating" number={7} label="Great" />
 
                     <li style={{gridRow: 'row-start 8'}} className='reviews__list__list'>Grand Theft Auto: The Trilogy - The Definitive Edition</li>
                     <div style={{gridRow: 'row-start 8'}} className='reviews__list__label'>Reviewed on PC</div>
-                    <RatingCircle position={8} className="reviews__list__rating" number={8} label="Great" />
+                    <RatingCircle position={8} className="reviews__list__rating" number={4} label="Poor" />
 
                     <li style={{gridRow: 'row-start 9'}} className='reviews__list__list'>Pokemon Brilliant Diamond</li>
                     <div style={{gridRow: 'row-start 9'}} className='reviews__list__label'>Reviewed on NS</div>
-                    <RatingCircle position={9} className="reviews__list__rating" number={8} label="Great" />
+                    <RatingCircle position={9} className="reviews__list__rating" number={7} label="Good" />
 
                     <li style={{gridRow: 'row-start 10'}} className='reviews__list__list'>Inscryption</li>
                     <div style={{gridRow: 'row-start 10'}} className='reviews__list__label'>Reviewed on PC</div>

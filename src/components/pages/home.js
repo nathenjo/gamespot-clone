@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ArticlesList from '../helpers/articlesList';
+import Footer from '../helpers/footer';
 import LargeImageArticle from '../helpers/largeImageArticle';
 import SmallImageArticle from '../helpers/smallImageArticle';
 import Reviews from '../homeReviews';
@@ -79,6 +80,7 @@ export default function Home(props) {
           </div>
           <TopGames className='home__top-games' />
           <Reviews className='home__reviews' />
+          {/* <Footer /> */}
          </div>
        );
 }

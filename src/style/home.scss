@@ -48,6 +48,7 @@
         align-self: end;
     }
     .footer {
-        
+        grid-row: footer-s/footer-e;
+        grid-column: 1/-1;
     }
 }
