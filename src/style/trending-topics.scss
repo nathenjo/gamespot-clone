@@ -1,0 +1,16 @@
+.trending-topics {
+    grid-column: s/e;
+    grid-row: topics-s/topics-e;
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    border-bottom: 1px solid lightgray;
+
+    &__link {
+        &:hover {
+            color: $pink;
+            cursor: pointer;
+        }
+    }
+    color: #767676;
+}

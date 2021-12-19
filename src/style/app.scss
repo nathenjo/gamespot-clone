@@ -1,0 +1,5 @@
+.app {
+    display: grid;
+    grid-template-columns: 200px [s] 1fr [e] 200px;
+    grid-template-rows: 45px [topics-s] 40px [topics-e] 30px [navbar-s] 50px [navbar-e content-s] 1fr [content-e footer-s] 30px [footer-e];
+}

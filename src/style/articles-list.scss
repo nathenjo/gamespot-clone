@@ -1,0 +1,24 @@
+.articles-list {
+    display: grid;
+    grid-template-columns: [article-list-s] 1fr [article-list-e sidebar-s] 1fr [sidebar-e];
+    grid-template-rows: repeat(auto-fit, auto) [article-list-e];
+    gap: 10px;
+    & > * {
+        grid-column: article-list-s/article-list-e;
+    }
+    &__header {
+        height: 40px;
+        display: flex;
+        gap: 20px;
+        font-size: 16px;
+        border-top: 1px solid #8F8F8F;
+        border-bottom: 1px solid #8F8F8F;
+        align-items: center;
+        & > * {
+            &:hover {
+                color: $pink;
+                cursor: pointer;
+            }
+        }
+    }
+}

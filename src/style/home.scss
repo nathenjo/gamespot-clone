@@ -1,0 +1,53 @@
+.home {
+    grid-column: s/e;
+    grid-row: content-s/content-e;
+    display: grid;
+    grid-template-rows: 20px [large-article-s] 350px [large-article-e small-article-s] auto [small-article-e articles-list-s] auto [articles-list-e footer-s] auto [footer-e];
+    grid-template-columns: 20px [s] auto [e] 20px;
+    gap: 20px 0px;
+    align-items: center;
+    &__large-image-articles {
+        grid-column: s/e;
+        grid-row: large-article-s/large-article-e;
+        display: grid;
+        grid-template-columns: [first-image-s] 800px [first-image-e second-image-s] 400px [second-image-e];
+        justify-content: space-between;
+        &__image-one {
+            grid-row: s/e;
+            grid-column: first-image-s/first-image-e;
+        }
+        &__image-two {
+            grid-row: s/e;
+            grid-column: second-image-s/second-image-e;
+            justify-self: end;
+        }
+    }
+    &__small-image-articles {
+        justify-content: space-between;
+        grid-column: s/e;
+        grid-row: small-article-s/small-article-e;
+        display: grid;
+        gap: 20px 15px;
+        grid-template-columns: repeat(auto-fill, 250px);
+        grid-template-rows: repeat(auto-fill, 220px);
+    }
+    &__articles-list-wrapper {
+        grid-column: s/e;
+        grid-row: articles-list-s/articles-list-e;
+        align-self: start;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #8f8f8f;
+    }
+    &__top-games, .reviews {
+        grid-row: articles-list-s/articles-list-e;
+        grid-column: s/e;
+        justify-self: end;
+        align-self: start;
+    }
+    .reviews {
+        align-self: end;
+    }
+    .footer {
+        
+    }
+}

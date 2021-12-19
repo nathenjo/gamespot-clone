@@ -1,0 +1,34 @@
+.reviews {
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        color: $pink;
+    }
+    &__list {
+        border: 1px solid #8f8f8f;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: [game-s] 180px [game-e rating-s] 30px [rating-e];
+        grid-template-rows: repeat(auto-fit, 50px [row-start]);
+        gap: 10px;
+        &__list {
+            grid-column: game-s/game-e;
+            align-self: center;
+            &:hover {
+                cursor: pointer;
+                color: $pink;
+            }
+        }
+        &__label {
+            grid-column: 1/-1;
+            align-self: end;
+            margin-top: 35px;
+            border-bottom: 1px solid #8f8f8f;
+        }
+        &__rating {
+            grid-column: rating-s/rating-e;
+            justify-self: end;
+            align-self: center;
+        }
+    }
+}

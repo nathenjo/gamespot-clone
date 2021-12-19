@@ -1,0 +1,31 @@
+.navbar {
+    grid-column: s/e;
+    grid-row: navbar-s/navbar-e;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &__logo {
+        border-radius: 40px;
+    }
+    &__links {
+        flex-grow: 3;
+        align-self: stretch;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .divider {
+            font-size: 2.5rem;
+        }
+    }
+    &__login {
+        text-align: right;
+        font-size: 16px;
+        cursor: pointer;
+        span:hover {
+            color: $pink;
+        }
+        .fa-search {
+            padding-left: 25px;
+        }
+    }
+}

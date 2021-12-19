@@ -1,0 +1,35 @@
+.top-games {
+    display: grid;
+    gap: 10px;
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        color: $pink;
+    }
+    &__list {
+        border: 1px solid #8f8f8f;
+        padding: 20px;
+
+
+
+        ol {
+            display: grid;
+            grid-template-columns: [s] 1fr [e];
+            grid-template-rows: repeat(auto-fit, auto);
+            gap: 5px;
+
+            li {
+                padding-left: 5px;
+                &:hover {
+                    color: $pink;
+                    cursor: pointer;
+                }
+            }
+
+            div {
+                border-bottom: 1px solid #8f8f8f;
+                padding-left: 5px;
+            }
+        }
+    }
+}

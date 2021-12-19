@@ -1,0 +1,34 @@
+.large-image-article {
+    display: grid;
+    grid-template-columns: [s] 1fr [e];
+    grid-template-rows: [image-s] 1fr [image-e];
+    align-items: flex-end;
+    cursor: pointer;
+    &__title, &__caption, &__image {
+        grid-column: s/e;
+        grid-row: image-s/image-e;
+        z-index: 1;
+        transition: 0.3s all ease;
+    }
+    &__title, &__caption {
+        color: white;
+        border-radius: 5px;
+        margin: 0px 5px;
+    }
+    &__title {
+        place-self: left end;
+        font-size: 20px;
+        padding: 5px;
+        gap: 40px;
+        margin-bottom: 40px;
+        font-weight: 600;
+
+    }
+    &__caption {
+        align-self: end;
+        font-size: 16px;
+        padding: 5px;
+        z-index: 5;
+        margin-bottom: 5px;
+    }
+}

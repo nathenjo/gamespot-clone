@@ -1,0 +1,19 @@
+.link {
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+    
+    &__title {
+        grid-row: title-s/title-e;
+    }
+    &:hover {
+        color: $pink;
+        border-bottom: 2px solid red;
+    }
+    span:hover {
+        cursor: pointer;
+    }
+    .fas {
+        padding-left: 4px;
+        grid-row: title-s/title-e;
+    }
+}

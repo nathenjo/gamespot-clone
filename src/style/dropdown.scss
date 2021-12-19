@@ -1,0 +1,18 @@
+.dropdown {
+    display: grid;
+    grid-template-columns: [s] 1fr [e];
+    grid-template-rows: repeat(auto-fill, 20px);
+    gap: 10px;
+    border-radius: 4px;
+    padding: 20px;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    &__link {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
